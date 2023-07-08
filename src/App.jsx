@@ -11,7 +11,7 @@ const message = [
   "invest in bb",
 ];
 
-/*
+
 function App() {
  const [step, setStep] = useState(1);
  const [isOpen, setIsOpen] = useState(true)
@@ -52,50 +52,49 @@ function App() {
 }
 
 export default App
-*/
 
 // test morning
 
 
 
-function App() {
-  const [step, setStep] = useState(1)
-  const [isOpen, setIsOpen] = useState(true)
-  function handlePrevious(){
-     if(step  > 1)setStep(step-1)
-  }
-  function handleNext(){
-     if(step < 4)setStep(step +1)
-  }
+// function App() {
+//   const [step, setStep] = useState(1)
+//   const [isOpen, setIsOpen] = useState(true)
+//   function handlePrevious(){
+//      if(step  > 1)setStep(step-1)
+//   }
+//   function handleNext(){
+//      if(step < 4)setStep(step +1)
+//   }
   
 
-  return (
-    <>
-    <button className='close' onClick={()=> setIsOpen(!isOpen)}>&times;</button>
-    {isOpen && (
-    <div className='step'>
-      <div className='numbers'>
-        <div className={ step >=1 ? 'active': ''}>1</div>
-        <div className={step >=2 ?'active': ''}>2</div>
-        <div className={ step >=3 ?'active': ''}>3</div>
-        <div className={ step >=4 ?'active': ''}>4</div>
+//   return (
+//     <>
+//     <button className='close' onClick={()=> setIsOpen(!isOpen)}>&times;</button>
+//     {isOpen && (
+//     <div className='step'>
+//       <div className='numbers'>
+//         <div className={ step >=1 ? 'active': ''}>1</div>
+//         <div className={step >=2 ?'active': ''}>2</div>
+//         <div className={ step >=3 ?'active': ''}>3</div>
+//         <div className={ step >=4 ?'active': ''}>4</div>
         
-      </div>
-      <p className='message'>
-        step{step}: {message[step-1]}
-      </p>
-      <div className='buttons'>
-        <button style={{backgroundColor:'blue', color:'#fff'}} onClick={handlePrevious}>previous</button>
-        <button style={{backgroundColor:'blue', color:'#fff'}} onClick={handleNext}>Next</button>
+//       </div>
+//       <p className='message'>
+//         step{step}: {message[step-1]}
+//       </p>
+//       <div className='buttons'>
+//         <button style={{backgroundColor:'blue', color:'#fff'}} onClick={handlePrevious}>previous</button>
+//         <button style={{backgroundColor:'blue', color:'#fff'}} onClick={handleNext}>Next</button>
        
-      </div>
-    </div>
-    )}
-    </>
-  )
-}
+//       </div>
+//     </div>
+//     )}
+//     </>
+//   )
+// }
 
-export default App
+//export default App
 
 
 
